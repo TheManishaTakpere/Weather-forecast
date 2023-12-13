@@ -1,0 +1,102 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+        .container{
+
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            background-color: transparent;        
+        }
+        .weather-app{
+            margin-top: 200px;
+            margin-left: 700px;
+            height: 400px;
+            width: 700px;         
+            border: 2px solid black;
+            background-color: #7aa6cc;
+/*            background-image: linear-gradient(to bottom,#336a80,#a18427,#e0b62b,#1f6e09) ;*/
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        #table1{
+           
+            height: 70px;
+            width: 800px;
+            border: transparent;
+            /* align-items: center; */
+            margin-top: 0px;
+        }
+        .weather-heading{
+            height: 100px;
+            width: 799px;
+            /* background-color: aqua; */
+            display: inline-flex;
+
+        }
+        .image-div{
+            width: 170px;
+            border:  transparent;
+            padding-left: 50px;
+            padding-right: 0px;
+        }
+        .h1-div{
+            padding-left: 0px;
+            padding-top: 20px;
+            width: 60%;
+            border:  transparent;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        #row{
+            width: 50%;
+            font-size: 20px;
+            font-weight: bolder;
+            padding-left: 22px;
+        }
+        #table2{
+            height: 70px;
+            width: 800px;
+            border: transparent;
+            align-items: center;
+            margin-top: 0px;
+        }
+       #sun{
+        width: 10%;
+        margin: 0px;
+        
+        
+       }
+       #sun2{
+        width: 20%;
+        padding-right: 20px;
+       }
+.fisrt-colume{
+    padding-left: 80px;
+}
+#cityname{
+    height: 25px;
+    background-color: lightgray;
+    border: none;
+}
+#btn{
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+#btn:hover{
+    box-shadow: 3px 3px 3px gray;
+    background-color: green;
+    color: white;
+}

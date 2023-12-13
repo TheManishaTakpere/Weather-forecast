@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather using table</title>
+    <link rel="stylesheet" href="weather1.css">
+</head>
+<body style="background-image: url(https://img.freepik.com/free-vector/dark-clouds-with-rainfall-thunder-flash-background_1017-32181.jpg?w=1380&t=st=1699372435~exp=1699373035~hmac=f437c3e3985cd965d2aacec6eb549bcb8fd83d210846826fd570b27d3a3a3d8a); background-repeat:no-repeat ;background-size: cover;">
+    
+    <div class="container">
+        <div class="weather-app">
+               <div class="weather-heading">
+                    <div class="image-div">
+                        <img src="https://icons.iconarchive.com/icons/large-icons/large-weather/512/partly-cloudy-day-icon.png" height="110px" width="110px" >
+                    </div>
+                        <div class="h1-div">
+                            Weather Forecast
+                        </div>
+
+                </div>
+            <table  id="table1"  border="black" align="center" >
+                <tr>
+                    <td id="sun">
+                        <img src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-3d/128/Sun-3d-icon.png" alt="sun" height="60px" width="60px" align="right"  id="s1">
+                    </td>
+                  <td id="row">
+                    <div class="input">
+                        <label for="city">Enter a city name : </label>
+                        <input type="text" id="cityname" required >
+                        <button type="button" onclick="getData()" id="btn">Get Details</button>
+                    </div>
+                  </td>
+                    <td id="sun2">
+                        <img src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-3d/128/Sun-3d-icon.png" alt="sun" height="60px" width="60px" >
+                    </td>
+                  </td>
+                </tr>
+            </table >
+            <table  id="table2" border="black" align="center">
+                <tr>
+                    <td class="fisrt-colume">
+                        <span><span><img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/128/Actions-flag-icon.png" height="30px" width="30px"></span><b> City :</b><span id="city"></span></span><br/><br/>
+
+                    </td>
+                    <td>
+                        <span><span><span><img src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-3d/256/Sun-Behind-Rain-Cloud-3d-icon.png" 
+                            height="40px" width="40px"></span><b> Description :</b><span id="desc"></span></span><br/><br/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fisrt-colume">
+                        <span><span><img src="https://icons.iconarchive.com/icons/large-icons/large-weather/128/tornado-icon.png" height="30px" width="30px"></span><b> Wind Speed :</b><span id="windspeed"> m/hr</span></span><br/><br/>
+
+                    </td>
+                    <td>
+                        <span><span><img src="https://icons.iconarchive.com/icons/dapino/summer-holiday/128/sun-icon.png" height="30px" width="30px"></span><b> Tempature:</b><span id="temp"> C</span></span><br/><br/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fisrt-colume">
+                        <span><span><img src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-3d/128/Sun-Behind-Cloud-3d-icon.png" height="30px" width="30px"></span><b> Humidity :</b><span id="humi"></span></span><br/><br/>
+                    </td>
+                    <td>
+                        <span><span><img src="https://icons.iconarchive.com/icons/aha-soft/large-calendar/128/Time-Zones-icon.png" height="30px" width="30px"></span><b> Time :</b><span id="time"></span> 120938</span><br/><br/>
+
+                    </td>
+                </tr>
+
+            </table>
+             
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
